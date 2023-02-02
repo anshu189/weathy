@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3d60e14b91b5e10cae81",
+    "revision": "ae38d47c783982057936",
     "url": "/weathy/static/css/main.5a483aa5.chunk.css"
   },
   {
-    "revision": "3d60e14b91b5e10cae81",
-    "url": "/weathy/static/js/main.3d60e14b.chunk.js"
+    "revision": "ae38d47c783982057936",
+    "url": "/weathy/static/js/main.ae38d47c.chunk.js"
   },
   {
     "revision": "df901ff3e4e482b3e153",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/weathy/static/media/rain.4789ada3.png"
   },
   {
-    "revision": "9d12ee3784c9c9da25b8586796ab8cb7",
+    "revision": "9d6baf4c3170b08dd2fc4229a7747fb9",
     "url": "/weathy/index.html"
   }
 ];
