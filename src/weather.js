@@ -45,8 +45,8 @@ function wther(){
 
             switch (json.weather[0].main) {
                 case 'Clear':
-                    weatherimg.classList.add('romtamte');
                     weatherimg.src = clearimg;
+                    weatherimg.classList.add('romtamte');
                     break;
                 case 'Snow':
                     weatherimg.classList.remove('romtamte');
@@ -61,6 +61,10 @@ function wther(){
                     weatherimg.src = mistimg;
                     break;
                 case 'Smoke':
+                    weatherimg.classList.remove('romtamte');
+                    weatherimg.src = mistimg;
+                    break;  
+                case 'Haze':
                     weatherimg.classList.remove('romtamte');
                     weatherimg.src = mistimg;
                     break;
