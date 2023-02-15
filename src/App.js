@@ -17,7 +17,6 @@ function App() {
           <p className="Locate-icon"><SlLocationPin/></p>
           <input className="getcity-input" type="text" placeholder='Enter your location' onKeyUp={event =>{
             if(event.key === 'Enter'){
-              console.log("called")
               wther();
             }
           }}/>
