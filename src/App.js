@@ -15,13 +15,22 @@ function App() {
       <div className="App">
         <div className="search-bar">
           <p className="Locate-icon"><SlLocationPin/></p>
-          <input className="getcity-input" type="text" placeholder='Enter your location'/>
+          <input className="getcity-input" type="text" placeholder='Enter your location' onKeyUp={event =>{
+            if(event.key === 'Enter'){
+              console.log("called")
+              wther();
+            }
+          }}/>
           <button onClick={wther} className="Find-icon"><SlMagnifier/></button>
         </div>
-        
+
         <div className="not-found">
           <img src={forofor} alt="" />
           <p>Oops! Try Another Location :/</p>
+        </div>
+
+        <div className="city-name">
+          <p className="cityname"></p>
         </div>
 
         <div className="weather-cont">
@@ -56,6 +65,3 @@ function App() {
 }
 
 export default App;
-
-
-// Write me code in react to save my uploaded image in local storage.
