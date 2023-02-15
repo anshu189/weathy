@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "ae38d47c783982057936",
-    "url": "/weathy/static/css/main.5a483aa5.chunk.css"
+    "revision": "c2b7e36e7b392f7d560a",
+    "url": "/weathy/static/css/main.795e8cdd.chunk.css"
   },
   {
-    "revision": "ae38d47c783982057936",
-    "url": "/weathy/static/js/main.ae38d47c.chunk.js"
+    "revision": "c2b7e36e7b392f7d560a",
+    "url": "/weathy/static/js/main.c2b7e36e.chunk.js"
   },
   {
-    "revision": "df901ff3e4e482b3e153",
-    "url": "/weathy/static/js/1.df901ff3.chunk.js"
+    "revision": "2acc3e20226515839720",
+    "url": "/weathy/static/js/1.2acc3e20.chunk.js"
   },
   {
     "revision": "7084158dbfa8c3e9e36a",
     "url": "/weathy/static/js/runtime~main.7084158d.js"
   },
   {
-    "revision": "a1b946b77451176dd46264016872c05e",
-    "url": "/weathy/static/media/404.a1b946b7.png"
-  },
-  {
     "revision": "9709df310feb062525f39929f2ddb88f",
     "url": "/weathy/static/media/mist.9709df31.png"
+  },
+  {
+    "revision": "a1b946b77451176dd46264016872c05e",
+    "url": "/weathy/static/media/404.a1b946b7.png"
   },
   {
     "revision": "97ee77b14ccbc72abb7d1af4aeb1c763",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/weathy/static/media/rain.4789ada3.png"
   },
   {
-    "revision": "9d6baf4c3170b08dd2fc4229a7747fb9",
+    "revision": "d089248e668e97627b0bd90d18089ae9",
     "url": "/weathy/index.html"
   }
 ];
