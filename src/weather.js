@@ -15,7 +15,7 @@ function wther(){
     var city = document.querySelector(".getcity-input").value;
     const cityname = document.querySelector(".cityname");
     var limk=``;
-    
+
     if(city.length===0){
         async function getLocation() {
             if (navigator.geolocation) {
@@ -28,14 +28,14 @@ function wther(){
             var latu=position.coords.latitude;
             var longu=position.coords.longitude;
             limk=`https://api.openweathermap.org/data/2.5/weather?lat=${latu}&lon=${longu}&units=metric&appid=${api_key}`
-            console.log("Latitude: " + latu + 
-            " Longitude: " + longu);
-            console.log("Link: "+limk);
+            // console.log("Latitude: " + latu + 
+            // " Longitude: " + longu);
+            // console.log("Link: "+limk);
             
             fetch(limk)
             .then(response=>response.json())
             .then(json=>{
-            console.log("Name: "+json.name);
+            // console.log("Name: "+json.name);
             if (json.cod==='404'){
                 error404.style.visibility = 'visible';
                 error404.classList.add('Fadin');
@@ -61,7 +61,7 @@ function wther(){
                 const des = document.querySelector(".Des");
                 const humidity = document.querySelector(".h-details span");
                 const wind = document.querySelector(".w-details span");
-                console.log(json.weather);
+                // console.log(json.weather);
 
                 switch (json.weather[0].main) {
                     case 'Clear':
@@ -114,8 +114,8 @@ function wther(){
         fetch(limk)
         .then(response=>response.json())
         .then(json=>{
-        console.log("Link: "+limk);
-        console.log("Name: "+json.name);
+        // console.log("Link: "+limk);
+        // console.log("Name: "+json.name);
         if (json.cod==='404'){
             error404.style.visibility = 'visible';
             error404.classList.add('Fadin');
@@ -143,7 +143,7 @@ function wther(){
             const des = document.querySelector(".Des");
             const humidity = document.querySelector(".h-details span");
             const wind = document.querySelector(".w-details span");
-            console.log(json.weather);
+            // console.log(json.weather);
             switch (json.weather[0].main) {
                 case 'Clear':
                     weatherimg.src = clearimg;
@@ -188,6 +188,28 @@ function wther(){
         }
         })
     }
+    cityname.onclick = () => {
+        var charturl="https://nikgautamgithub.github.io/WeatherReport"
+        window.location.href = charturl;
+        // // Wait for the page to fully load
+        // window.addEventListener('load', function() {
+        //   setTimeout(function() {
+        //     var queryParams = new URLSearchParams(window.location.search);
+        //     var datu = queryParams.get("data");
+        //     console.log(datu);
+      
+        //     // Get the input field
+        //     var cityname2 = document.getElementById("input-city");
+        //     cityname2.focus();
+        //     // Check if the input field exists before setting its value
+        //     if (cityname2) {
+        //       cityname2.value = datu;
+        //       console.log("done.");
+        //     }console.log("huehue not found!");
+        //   }, 5000);
+        // });
+      };
+      
 }
     
 export default wther;
